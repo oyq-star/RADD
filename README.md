@@ -127,18 +127,3 @@ python run_traditional_baselines.py \
 | Subtrajectory Splice | Replace a segment with another user's segment |
 | Social Inconsistency | Replace POIs with locations far from user and friends |
 
-## Citation
-
-If you find this work useful, please cite:
-
-```bibtex
-@inproceedings{radd2026,
-  title={Socially-Aware Trajectory Anomaly Detection via Dual-View Fusion in Location-Based Social Networks},
-  author={Anonymous},
-  year={2026}
-}
-```
-
-## License
-
-This project is released under the MIT License.
