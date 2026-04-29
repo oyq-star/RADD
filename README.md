@@ -2,13 +2,6 @@
 
 This repository contains the code and paper for **RADD** (Robustness-Aware Dual-view Detection), a self-supervised dual-view framework for trajectory anomaly detection in Location-Based Social Networks (LBSNs).
 
-## Overview
-
-RADD scores trajectory anomalies from two complementary views:
-- **Personal view**: deviation from the user's own historical mobility prototype
-- **Social view**: deviation from a prototype aggregated over the user's top-*k* mobility-relevant friends
-
-The two calibrated scores are fused via simple weighted combination, requiring no anomaly labels.
 
 ### Key Results
 
@@ -111,12 +104,6 @@ python run_traditional_baselines.py \
     --results_dir ../results
 ```
 
-## Method
-
-1. **Shared Trajectory Encoder**: GRU autoencoder trained on normal check-in sequences with cross-entropy reconstruction loss
-2. **Personal Branch**: Cosine distance between trajectory embedding and user's historical prototype
-3. **Social Branch**: Cosine distance between trajectory embedding and top-*k* friends' aggregated prototype (weighted by POI co-visitation similarity)
-4. **Fusion**: Z-score normalization + weighted combination with fixed alpha=0.5
 
 ## Anomaly Types
 
